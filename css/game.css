@@ -1,0 +1,230 @@
+
+
+/* The navigation menu links  */
+.sidenav a {
+  padding: 1px 2px ; 
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} 
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  /* 30vw width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.505);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+#user {
+ cursor: pointer;
+  min-width:7vw;
+  min-height:  17vh;
+  font-size: 3vh;
+  color: rgb(237, 242, 247);
+  position: absolute;
+  left: 0;
+  margin-top: 6px;
+  display: inline-block;
+  margin: 0.1vw;
+}
+
+.hangMan {
+  position: sticky;
+  left: 38vw;
+  width: 10vw;
+  top: 10px;
+  height: 40vh;
+}
+
+.ship {
+  position: sticky;
+  left: 0; 
+  width: 38vw;
+  height: 50vh;
+}
+
+.chooseWard {
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: larger;
+}
+
+.gap {
+  width: 10px;
+}
+
+.gameOver {
+  font-size: 3rem;
+  display: block;
+  color:rgb(176, 98, 38) ;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url("../animation/waves1.gif");
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden !important;
+  padding: 0;
+  /* place-content: center; */
+  text-align: center;
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center
+}
+
+.success{
+  background-image :url("../animation/wow.gif");
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  color:rgb(176, 98, 38) ;
+  font-size: 3rem;
+}
+
+
+.btn {
+  font-size: large;
+  border-radius: 15px;
+  width: 6vw;
+  height: 10vh;
+}
+
+.btnClue,
+.newGame,
+.clue,
+.btn,
+.viewStatus {
+  background-image: url("../pictures/wood6.jfif");
+  color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: cursive;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnClue,
+.newGame {
+  cursor: pointer;
+  width: 10vw;
+  height: 6vh;
+  margin: 25px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.btnLetters {
+  padding: 0px;
+  margin: 0px 50px 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gamesBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  font-size: 2rem;
+}
+
+.clueHide {
+  display: none;
+}
+
+.btnclick {
+  background-image: none;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.clue {
+  display: none;
+  width: 20vw;
+  height: 15vh;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+}
+
+.newDetails,
+.d,.level {
+  display: none;
+  width: 25vw;
+  height: 15vh;
+  font-family: cursive;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+.level{
+  width: 25vw;
+  height: 5vh;
+}
+.newDetails {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.d {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.hangManGameOver{
+  display:none;
+}
+
+.dolfin{
+  background-image: url("../pictures/shark1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  width: 18vw;
+ height: 20vh;
+  bottom: 35vh;
+} 
+.dolfinSuccess{
+  display: none;
+}
+.dolfinGameOver{
+  background-image: url("../pictures/shark3.png");
+}

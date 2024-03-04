@@ -1,0 +1,120 @@
+:root {
+    --MAIN_COLOR: white;
+    --BACKGROUND_COLOR: black;
+    --BOX_SHADOW: rgba(255,255,255,.5);
+    --BACKGROUND: rgba(118, 174, 241, 1) 100%;
+    --CIRCLE_COLOR: radial-gradient(circle,rgb(26, 212, 212)15%,rgb(233, 137, 68) 40%,  rgb(239, 33, 108)100% );
+    --WARNINGS:red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    background-color: var(--BACKGROUND_COLOR);
+    max-width: 100%;
+    overflow-x: hidden;
+    place-content: center;
+    height: 100%;
+
+}
+.logo {
+    width: 10vw;
+    height: 20vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.detailesUser {
+    z-index: 1  !important;
+    width:40%;
+    height: 80%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    position: relative;
+    /* box-shadow: 0px 0px 2px 2px var(--BOX_SHADOW) ; */
+background-color:var(--BACKGROUND_COLOR);
+border: none;
+}
+#nameN,
+#password,
+#verification,
+#email,
+#submitS {
+    /* justify-content: center; */
+    width: 98%;
+    height: 30%;
+    background: var(--BACKGROUND);
+    background: var(--CIRCLE_COLOR);
+    line-height: 50px;
+    padding: 0;
+    border: none;
+    margin: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+#submitS{
+    /* box-shadow: 4px 4px 0px var(--BOX_SHADOW); */
+    border-radius: 15px;
+}
+
+.warnings{
+    color: var(--WARNINGS);
+    font-size: 0.8rem;
+    font-family:cursive; 
+    margin: 5px;
+    padding: 5px;
+    width:100%;
+}
+.img{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 25vw;
+    width:35vw;
+}
+#submitS{
+    cursor: pointer;
+}
+
+a{
+    color:rgb(174, 174, 171);
+    /* text-align: center; */
+}
+
+@media screen and (max-width:992px) {
+    .logo{
+        width:15vw;
+    height: 14vh;
+    }
+    .detailesUser {
+        margin-top: 25vh;
+        width:60%;
+    height: 80%;
+    }
+    #nameN,
+#password,
+#verification,
+#email,
+#submitS {
+    font-size: 15px;
+    width: 95%;
+}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="../fa/css/all.min.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <script defer src="../js/game.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- סמל משתמש -->
+        <i class="fa-regular fa-user" id="user"></i>
+        <div class="sidenav">
+            <div class="d"></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="viewStatus">view status</button>
+            <div class="newDetails"></div>
+            <div class="chooseLevel">
+                <h5>level:</h5>
+                <div class="level"></div>
+                <div class="chooseLevel"><input type="radio" name="level" value="1"><label>easy</label></div>
+                <div class="chooseLevel"><input type="radio" name="level" value="2"><label>medum</label></div>
+                <div class="chooseLevel"><input type="radio" name="level" value="3"><label>difficult</label></div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- img of the hang man -->
+    <img src="../pictures/pirate2.png" class="hangMan">
+    <img src="../pictures/boat.png" class="ship">
+    
+    <!-- the word that choose -->
+    <div class="chooseWard"></div>
+    <br>
+    <div class="btnLetters"></div>
+    <br>
+    <div class="gamesBtn">
+        <button class="btnClue">clue</button>
+        <button class="clue"></button>
+        <button class="newGame">new game</button>
+    </div>
+    <div class="dolfin"></div>
+</body>
+
+</html>
